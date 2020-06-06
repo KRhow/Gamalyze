@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>How not to use a crafting system</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analysing and deconstructing games and design
+    to better understand the games that shaped our past, affect our present and
+    direct our future">
+    <meta name="keywords" content="Game Design,Design,Video Games,Games">
+    <meta name="author" content="Kevin Rheault">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="brand">
+                    <div>Gamalyze</div>
+                </div>
+            </div>
+
+
+            <div class="right-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="archive.html">Archive</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <article>
+                <h1 id="article-title">Crafting multiples of the same item, at the same time</h1>
+
+                <h2 id="article-subtitle">Finding solutions</h2>
+                <br>
+                <br>
+                <p id="article-author">by Kevin Rheault</p>
+                <time id="article-date" datetime:"05-20-20">May. 20, 2020</time>
+                <br>
+                <br>
+                <br>
+<h3 id="article-topic"> Problem </h3>
+<p id="article-text">
+Crafting an item multiple times in a row is one of the heaviest interactions on the
+game. When taking on the process you will be faced with multiple menu interactions,
+animations and text dialogue. The cherry on the cake is when you open the crafting
+menu bringing you back to the last option you had previously selected to help you chain
+crafting the same item. It feels like the developpers knew players would need to
+craft an item more than once but didn't go whole way to give you a multi-craft
+option.
+</p>
+<br>
+</br>
+<p id="article-text">
+To create multiples, the process list reads as follow:
+<ul class="a">
+    <li>Interact with the crafting bench</li>
+    <li>Crafting dialogue</li>
+    <li>Select the crafting option</li>
+    <li>Select the item you want to craft</li>
+    <li>Confirm you want to craft it</li>
+    <li>Crafting animation</li>
+    <li>Completion dialogue</li>
+    <li>Select the "Keep Crafting" option</li>
+    <li>Character turnaround animations</li>
+</ul>
+</p>
+<br>
+</br>
+<p id="article-text">
+After the character turnaround, you are brought back to the item selection menu.
+To get some perspective, creating 10 of the same item is a 63 step program, 9
+steps for the first item, then 9 loops of 6 steps for the remaining items.
+</p>
+<br>
+<br>
+<h3 id="article-topic"> Solution </h3>
+<p id="article-text">
+The goal would be to reduce the amount of steps required by breaking that loop
+and giving the player a straight line to what they want.
+<br>
+<br>
+That straight line instead would involve adding a step to ask the player how many
+of the item they want to craft, simple as that. When seeing this problem for the
+first time, I instantly got in my mind Pokemon's Pokemart options to buy the same
+item in bulk. It's a simple system that works well and has been part of their
+games since the begining of the series.
+</p>
+<br>
+<br>
+<div class="blogpost-text-image-single-wrapper">
+<img class="blogpost-text-image-single" src="images/Pokemon_Multibuy/Pokemon_Multibuy_01.jpg">
+</div>
+<br>
+<br>
+<p id="article-text">
+For comparison, Pokemon's process list reads as follow:
+<ul class="a">
+    <li>Interact with the Pokemart vendor</li>
+    <li>Vendor dialogue</li>
+    <li>Select the buy option</li>
+    <li>Select the item you want to buy</li>
+    <li>Select how many you want of the item</li>
+    <li>Confirm your purchase</li>
+    <li>Completion dialogue</li>
+</ul>
+</p>
+<br>
+</br>
+<p id="article-text">
+After the completion dialogue, you are brough back to the item selection menu.
+In total to get 10 items, it would take the player 7 actions, 9 to exit the menus
+and get back to playing.
+</p>
+<br>
+</br>
+<h3 id="article-topic"> What it would look like </h3>
+<p id="article-text">
+Between step 04 and 05, have a menu open and ask the player “how many would you
+like to craft?” and have a counter appear. Using the joystick or d-pad up you
+add more of the item to create, using the joystick or d-pad down to lessen the
+amount. You can use B to come back or A to accept the amount you want to create.
+When you press A, there is a check to see if there is enough space in your
+inventory to create that many items before the confirmation step 05. If you
+don’t have enough space, a message appears: “There isn’t enough space in your
+bag to fit all of these, take some things out before!”, then the menu closes so
+you can check your inventory to decide what to remove to make space.
+</p>
+            </article>
+        </div>
+    </div>
+</body>
